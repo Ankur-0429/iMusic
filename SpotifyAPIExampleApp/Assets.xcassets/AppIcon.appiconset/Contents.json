@@ -1,41 +1,49 @@
 {
   "images" : [
     {
+      "filename" : "Spotify_Icon_RGB_Green (3).png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
+      "filename" : "Spotify_Icon_RGB_Green (4).png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
+      "filename" : "Spotify_Icon_RGB_Green (5).png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
+      "filename" : "Spotify_Icon_RGB_Green (6).png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
+      "filename" : "Spotify_Icon_RGB_Green (1).png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
+      "filename" : "Spotify_Icon_RGB_Green (2) 1.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
+      "filename" : "Spotify_Icon_RGB_Green.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
+      "filename" : "Spotify_Icon_RGB_Green (2).png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
@@ -86,6 +94,7 @@
       "size" : "83.5x83.5"
     },
     {
+      "filename" : "Spotify_Icon_RGB_Green (7).png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

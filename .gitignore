@@ -2,4 +2,4 @@ SpotifyAPIExampleApp.xcodeproj/xcuserdata/
 /build
 Package.resolved
 .vscode
-./SpotifyAPIExampleApp/Model/Secrets.swift
+Secrets.swift

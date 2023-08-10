@@ -462,11 +462,13 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SpotifyAPIExampleApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iMusic;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Peter-Schorn.SpotifyAPIExampleApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -488,11 +490,13 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SpotifyAPIExampleApp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iMusic;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Peter-Schorn.SpotifyAPIExampleApp";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
