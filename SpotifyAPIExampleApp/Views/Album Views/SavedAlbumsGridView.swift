@@ -76,6 +76,9 @@ struct SavedAlbumsGridView: View {
             }
         }
         .padding(.bottom, 50)
+        .navigationBarTitle("Listen Now")
+//        .navigationBarItems(trailing: LogoutButton())
+        .disabled(!spotify.isAuthorized)
     }
     
     var refreshButton: some View {

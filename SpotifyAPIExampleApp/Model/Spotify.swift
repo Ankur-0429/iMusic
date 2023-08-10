@@ -14,21 +14,9 @@ import SpotifyWebAPI
  */
 final class Spotify: ObservableObject {
     
-    private static let clientId: String = {
-        if let clientId = ProcessInfo.processInfo
-                .environment["CLIENT_ID"] {
-            return clientId
-        }
-        fatalError("Could not find 'CLIENT_ID' in environment variables")
-    }()
+    private static let clientId: String = Secrets.clientId
     
-    private static let clientSecret: String = {
-        if let clientSecret = ProcessInfo.processInfo
-                .environment["CLIENT_SECRET"] {
-            return clientSecret
-        }
-        fatalError("Could not find 'CLIENT_SECRET' in environment variables")
-    }()
+    private static let clientSecret: String = Secrets.clientSecret
     
     /// The key in the keychain that is used to store the authorization
     /// information: "authorizationManager".
@@ -93,7 +81,7 @@ final class Spotify: ObservableObject {
         // Configure the loggers.
         self.api.apiRequestLogger.logLevel = .trace
         // self.api.logger.logLevel = .trace
-        
+
         // MARK: Important: Subscribe to `authorizationManagerDidChange` BEFORE
         // MARK: retrieving `authorizationManager` from persistent storage
         self.api.authorizationManagerDidChange
@@ -102,17 +90,17 @@ final class Spotify: ObservableObject {
             .receive(on: RunLoop.main)
             .sink(receiveValue: authorizationManagerDidChange)
             .store(in: &cancellables)
-        
+
         self.api.authorizationManagerDidDeauthorize
             .receive(on: RunLoop.main)
             .sink(receiveValue: authorizationManagerDidDeauthorize)
             .store(in: &cancellables)
-        
+
         
         // MARK: Check to see if the authorization information is saved in
         // MARK: the keychain.
         if let authManagerData = keychain[data: self.authorizationManagerKey] {
-            
+
             do {
                 // Try to decode the data.
                 let authorizationManager = try JSONDecoder().decode(
@@ -120,7 +108,7 @@ final class Spotify: ObservableObject {
                     from: authManagerData
                 )
                 print("found authorization information in keychain")
-                
+
                 /*
                  This assignment causes `authorizationManagerDidChange` to emit
                  a signal, meaning that `authorizationManagerDidChange()` will
@@ -136,7 +124,7 @@ final class Spotify: ObservableObject {
                  already done in `authorizationManagerDidChange()`.
                  */
                 self.api.authorizationManager = authorizationManager
-                
+
             } catch {
                 print("could not decode authorizationManager from data:\n\(error)")
             }

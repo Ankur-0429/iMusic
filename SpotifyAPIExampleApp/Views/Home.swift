@@ -57,16 +57,19 @@ struct Home: View {
     
     @ViewBuilder
     func CustomBottomSheet() -> some View {
-        MusicInfo(expandSheet: $expandSheet, animation: animation)
-            .background(.thinMaterial)
-            .matchedGeometryEffect(id: "BGVIEW", in: animation)
-            .frame(height: 70)
-            .overlay(alignment: .bottom) {
-                Rectangle()
-                    .fill(.gray.opacity(0.3))
-                    .frame(height: 1)
-            }
-            .offset(y: -49)
+        if (!expandSheet) {
+            MusicInfo(expandSheet: $expandSheet, animation: animation)
+                .matchedGeometryEffect(id: "BGVIEW", in: animation)
+                .background(.thinMaterial)
+                .frame(height: 70)
+                .overlay(alignment: .bottom) {
+                    Rectangle()
+                        .fill(.gray.opacity(0.3))
+                        .frame(height: 1)
+                }
+                .offset(y: -49)
+        }
+            
     }
     
     @ViewBuilder

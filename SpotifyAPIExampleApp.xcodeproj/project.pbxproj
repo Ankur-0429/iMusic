@@ -13,6 +13,8 @@
 		02B2A8BA2A8477B90027A3CD /* VolumeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B2A8B92A8477B90027A3CD /* VolumeManager.swift */; };
 		02B2A8BD2A8477FE0027A3CD /* MPVolumeView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B2A8BC2A8477FE0027A3CD /* MPVolumeView+Extensions.swift */; };
 		02B2A8BF2A847B900027A3CD /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B2A8BE2A847B900027A3CD /* KeyboardObserver.swift */; };
+		02B2A8C32A84A5CB0027A3CD /* LogoutButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B2A8C22A84A5CB0027A3CD /* LogoutButton.swift */; };
+		02B2A8C52A84AA310027A3CD /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B2A8C42A84AA310027A3CD /* Secrets.swift */; };
 		470812ED2515E4D700794934 /* SpotifyAPIExampleAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470812EC2515E4D700794934 /* SpotifyAPIExampleAppApp.swift */; };
 		470812EF2515E4D700794934 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470812EE2515E4D700794934 /* RootView.swift */; };
 		470812F12515E4DA00794934 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 470812F02515E4DA00794934 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		02B2A8B92A8477B90027A3CD /* VolumeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeManager.swift; sourceTree = "<group>"; };
 		02B2A8BC2A8477FE0027A3CD /* MPVolumeView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MPVolumeView+Extensions.swift"; sourceTree = "<group>"; };
 		02B2A8BE2A847B900027A3CD /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		02B2A8C22A84A5CB0027A3CD /* LogoutButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutButton.swift; sourceTree = "<group>"; };
+		02B2A8C42A84AA310027A3CD /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 		470812E92515E4D700794934 /* SpotifyAPIExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyAPIExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		470812EC2515E4D700794934 /* SpotifyAPIExampleAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyAPIExampleAppApp.swift; sourceTree = "<group>"; };
 		470812EE2515E4D700794934 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
@@ -113,8 +117,8 @@
 		470812EB2515E4D700794934 /* SpotifyAPIExampleApp */ = {
 			isa = PBXGroup;
 			children = (
-				02B2A8BB2A8477EA0027A3CD /* Extensions */,
 				470812EC2515E4D700794934 /* SpotifyAPIExampleAppApp.swift */,
+				02B2A8BB2A8477EA0027A3CD /* Extensions */,
 				470813112515EB8000794934 /* Model */,
 				470813082515E9F500794934 /* Views */,
 				4708130C2515EB6200794934 /* Project Utilities */,
@@ -148,6 +152,7 @@
 				02B2A8B12A8476F20027A3CD /* Home.swift */,
 				02B2A8B32A8477250027A3CD /* ExpandedBottomSheet.swift */,
 				02B2A8B72A8477A40027A3CD /* VolumeSlider.swift */,
+				02B2A8C22A84A5CB0027A3CD /* LogoutButton.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +175,7 @@
 				47AAFC3F25A003E800DC1A02 /* PlaylistDeduplicator.swift */,
 				02B2A8B92A8477B90027A3CD /* VolumeManager.swift */,
 				02B2A8BE2A847B900027A3CD /* KeyboardObserver.swift */,
+				02B2A8C42A84AA310027A3CD /* Secrets.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -285,7 +291,9 @@
 				47B9615E2516BA990069E441 /* SearchForTracksView.swift in Sources */,
 				475CB239259F34450092653A /* AlbumTrackCellView.swift in Sources */,
 				47D86875266A26D2006F971B /* DebugMenuView.swift in Sources */,
+				02B2A8C32A84A5CB0027A3CD /* LogoutButton.swift in Sources */,
 				47363AEB26112991007EEF6A /* RecentlyPlayedView.swift in Sources */,
+				02B2A8C52A84AA310027A3CD /* Secrets.swift in Sources */,
 				02B2A8B82A8477A40027A3CD /* VolumeSlider.swift in Sources */,
 				470812EF2515E4D700794934 /* RootView.swift in Sources */,
 				47AAFC4025A003E800DC1A02 /* PlaylistDeduplicator.swift in Sources */,

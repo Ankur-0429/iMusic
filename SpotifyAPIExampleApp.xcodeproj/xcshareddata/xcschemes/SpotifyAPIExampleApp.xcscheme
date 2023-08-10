@@ -55,12 +55,12 @@
          <EnvironmentVariable
             key = "CLIENT_ID"
             value = "7edc22208ac648218bc93c831c4760ef"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
          <EnvironmentVariable
             key = "CLIENT_SECRET"
             value = "e0c3430ddddf40a09188fad4a5e343ec"
-            isEnabled = "YES">
+            isEnabled = "NO">
          </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
